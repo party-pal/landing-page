@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+body header {
+  border: 1px solid black;
+  margin-top: 5%;
+  padding: 3%;
+}
+body header .title {
+  font-size: 4em;
+}
+body header h3 {
+  font-size: 2em;
+}
