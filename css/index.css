@@ -2,6 +2,16 @@ body {
   background: url('../img/about-bg.jpg') center no-repeat;
   background-size: cover;
 }
+body .about-container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  body .about-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 body .about-container .title {
   color: #f2e7d2;
   background-color: rgba(0, 0, 0, 0.5);
