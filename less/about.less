@@ -12,6 +12,8 @@ body {
             text-shadow: 3px 3px 4px #111;
             font-size: 4em;
             font-weight: bold;
+            border-radius: 15px;
+            padding: 1%;
         }
         .overlay {
         
@@ -28,19 +30,24 @@ body {
     
     .team {
         display: flex;
-        
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         z-index: 5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4em;
+        .team-member-name {
+            text-decoration: underline;
+        }
     
         .team-member {
             background-color: white;
             width: 25%;
             border: 1px solid black;
             border-radius: 10%;
-            padding: 1%;
+            padding: 2%;
             margin: 1em 0em;
+            
     
             img {
                 height: auto;
@@ -57,11 +64,12 @@ body {
     }
 
     .go-home {
-        font-size: 2em;
+        font-size: 1.4em;
         padding: 1%;
         text-shadow: 2px 2px 2px #111;
         color:rgb(242, 231, 210);
         background-color: rgba(0,0,0,0.5);
+        border-radius: 15px;
     }
     }
     //container

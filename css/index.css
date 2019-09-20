@@ -10,6 +10,8 @@ body .about-container .title {
   text-shadow: 3px 3px 4px #111;
   font-size: 4em;
   font-weight: bold;
+  border-radius: 15px;
+  padding: 1%;
 }
 body .about-container .overlay {
   position: fixed;
@@ -27,13 +29,18 @@ body .about-container .team {
   align-items: center;
   justify-content: space-evenly;
   z-index: 5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+}
+body .about-container .team .team-member-name {
+  text-decoration: underline;
 }
 body .about-container .team .team-member {
   background-color: white;
   width: 25%;
   border: 1px solid black;
   border-radius: 10%;
-  padding: 1%;
+  padding: 2%;
   margin: 1em 0em;
 }
 body .about-container .team .team-member img {
@@ -47,11 +54,12 @@ body .about-container .team .developers {
   justify-content: space-evenly;
 }
 body .about-container .go-home {
-  font-size: 2em;
+  font-size: 1.4em;
   padding: 1%;
   text-shadow: 2px 2px 2px #111;
   color: #f2e7d2;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 body {
   font-size: 62.5%;
