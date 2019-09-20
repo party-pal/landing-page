@@ -21,14 +21,14 @@ body .hero .hero-text .title {
   color: #f2e7d2;
   text-shadow: 3px 3px 3px #333;
 }
-body .hero .hero-text p {
-  font-size: 2em;
+body .hero .hero-text h3 {
+  font-size: 3em;
   color: #f2e7d2;
   margin-top: -1em;
   background-color: rgba(37, 37, 37, 0.03);
 }
 @media (max-width: 500px) {
-  body .hero .hero-text p {
+  body .hero .hero-text h3 {
     background-color: rgba(37, 37, 37, 0.3);
   }
 }
