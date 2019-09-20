@@ -1,11 +1,15 @@
 body {
   text-align: center;
+  width: 1000px;
+  box-sizing: border-box;
+  margin: auto;
 }
 body .hero {
   background: url('../img/hero-bg.jpg') center no-repeat;
   background-size: cover;
   border: 1px solid black;
   padding: 8%;
+  width: 100%;
 }
 body .hero .hero-text {
   width: 60%;
@@ -17,14 +21,45 @@ body .hero .hero-text .title {
   color: #f2e7d2;
   text-shadow: 3px 3px 3px #333;
 }
-body .hero .hero-text h3 {
+body .hero .hero-text p {
   font-size: 2em;
   color: #f2e7d2;
   margin-top: -1em;
   background-color: rgba(37, 37, 37, 0.03);
 }
 @media (max-width: 500px) {
-  body .hero .hero-text h3 {
+  body .hero .hero-text p {
     background-color: rgba(37, 37, 37, 0.3);
   }
+}
+body .budget {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+}
+body .budget .decor {
+  width: 550px;
+}
+body .budget .costs {
+  margin-left: 120px;
+  font-size: 30px;
+}
+body .organize {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+}
+body .organize .supplies {
+  width: 550px;
+}
+body .theme {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+}
+body .theme .circus {
+  width: 550px;
+}
+.pineapple {
+  margin-top: 25px;
 }

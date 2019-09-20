@@ -1,11 +1,17 @@
 body {
     text-align: center;
+    width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+
+
     .hero {
         background: url('../img/hero-bg.jpg') center
         no-repeat;
         background-size: cover;
         border: 1px solid black;
         padding: 8%;
+        width: 100%;
 
         .hero-text {
             
@@ -21,7 +27,7 @@ body {
                 
             }
     
-            h3 {
+            p {
                 font-size: 2em;
                 color:rgb(242, 231, 210);
                 margin-top: -1em;
@@ -35,7 +41,46 @@ body {
         }
         
         
+        .budget {
+            display: flex;
+            margin-top: 100px;
+            width: 100%;
+        
+
+
+            .decor {
+                width: 550px;
+            }
+            
+            .costs {
+                margin-left: 120px;
+                font-size: 30px;
+                // margin-left: 120px;
+            }
 
         
-    
+        }
+        
+        .organize {
+            display: flex;
+            margin-top: 100px;
+            width: 100%;
+        
+
+            .supplies {
+                width: 550px;
+            }
+        }
+
+        .theme {
+            display: flex;
+            margin-top: 100px;
+            width: 100%;
+        
+
+
+            .circus {
+                width: 550px;
+            }
+        }
 }
