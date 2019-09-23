@@ -1,4 +1,5 @@
 body {
+  font-size: 62.5%;
   text-align: center;
   width: 1000px;
   box-sizing: border-box;
@@ -18,9 +19,10 @@ body .hero .hero-text {
   width: 60%;
   margin-left: 35%;
   background-color: rgba(37, 37, 37, 0);
+  font-family: 'Montserrat', sans-serif;
 }
 body .hero .hero-text .title {
-  font-size: 4em;
+  font-size: 6em;
   color: #f2e7d2;
   text-shadow: 3px 3px 3px #333;
 }
