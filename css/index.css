@@ -6,11 +6,12 @@ nav {
 }
 nav .nav-item {
   display: inline-block;
-  margin: 1.1em;
+  margin: 1em;
+  padding: 0.5em;
   text-decoration: none;
   color: #f2e7d2;
-  background-color: rgba(37, 37, 37, 0.3);
-  font-size: 2em;
+  background-color: rgba(37, 37, 37, 0.8);
+  font-size: 1.6em;
   transition: all 0.3s ease-in;
 }
 @media (min-width: 1000px) {
@@ -132,10 +133,10 @@ body {
   box-sizing: border-box;
 }
 body .hero {
-  background: url('../img/hero-bg.jpg') center no-repeat;
+  background: url('../img/hero-bg.png') center no-repeat;
   background-size: cover;
   border: 1px solid black;
-  padding: 8%;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,7 +160,7 @@ body .hero .hero-text h3 {
 }
 @media (max-width: 500px) {
   body .hero .hero-text h3 {
-    background-color: rgba(37, 37, 37, 0.3);
+    background-color: rgba(37, 37, 37, 0.5);
   }
 }
 footer {
