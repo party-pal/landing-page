@@ -249,6 +249,7 @@ body .about-container .go-home {
   font-family: 'Acme', serif;
 }
 body {
+  font-size: 62.5%;
   text-align: center;
   width: 1000px;
   margin: auto;
@@ -271,7 +272,7 @@ body .hero .hero-text {
   font-family: 'Montserrat', sans-serif;
 }
 body .hero .hero-text .title {
-  font-size: 2em;
+  font-size: 6em;
   color: #f2e7d2;
   text-shadow: 3px 3px 3px #333;
 }
