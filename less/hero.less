@@ -1,7 +1,6 @@
 body {
     font-size: 62.5%;
     text-align: center;
-
     width: 1000px;
     box-sizing: border-box;
     margin: auto;
@@ -10,116 +9,98 @@ body {
         margin-left: 160px;
     }
 
-    box-sizing: border-box;
     .hero {
-        background: url('../img/hero-bg.jpg') center
-        no-repeat;
+        background: url("../img/hero-bg.png") center no-repeat;
         background-size: cover;
         border: 1px solid black;
-        padding: 8%;
-        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
         .hero-text {
-            
             width: 60%;
-            margin-left: 35%;
-            background-color: rgba(37, 37, 37, .00);
-            font-family: 'Montserrat', sans-serif;
-            
+            // margin-left: 25%;
+            background-color: rgba(37, 37, 37, 0);
+            font-family: "Montserrat", sans-serif;
+
             .title {
                 font-size: 6em;
-                color:rgb(242, 231, 210);
+                color: rgb(242, 231, 210);
                 text-shadow: 3px 3px 3px #333;
-                
-                
-                
-                
             }
-    
+
             h1 {
                 font-size: 2em;
-   
-
-                color:rgb(242, 231, 210);
+                color: rgb(242, 231, 210);
                 margin-top: -1em;
-                background-color: rgba(37, 37, 37, .03);
-                ;
-
+                background-color: rgba(37, 37, 37, 0.03);
                 @media @mobile {
-                    background-color: rgba(37, 37, 37, .3);
+                    background-color: rgba(37, 37, 37, 0.5);
                 }
             }
         }
-        }
-        
-        
-        .budget {
-            display: flex;
-            margin-top: 100px;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
+    }
 
+    .budget {
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
 
-            .decor {
-                width: 550px;
-            }
-            
-            .costs {
-                margin-right: -150px;
-                margin-left: 50px;
-                font-size: 30px;
-                border: 3px dashed #2BA3A4;
-                border-radius: 0px 40px 0px 40px;
-            }
-
-        
-        }
-        
-        .organize {
-            display: flex;
-            margin-top: 100px;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-        
-
-            .supplies {
-                width: 550px;
-                margin-right: -150px;
-            }
-
-            .tasks {
-                margin-right: 120px;
-                font-size: 30px;
-                border: 3px dashed #2BA3A4;
-                border-radius: 40px 0px 40px 0px;
-            }
+        .decor {
+            width: 550px;
         }
 
-        .theme {
-            display: flex;
-            margin-top: 100px;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-        
+        .costs {
+            margin-right: -150px;
+            margin-left: 50px;
+            font-size: 30px;
+            border: 3px dashed #2ba3a4;
+            border-radius: 0px 40px 0px 40px;
+        }
+    }
 
+    .organize {
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
 
-            .circus {
-                width: 550px;
-            }
+        .supplies {
+            width: 550px;
+            margin-right: -150px;
+        }
 
-            .ideas {
-                margin-right: -150px;
-                margin-left: 50px;
-                font-size: 30px;
-                border: 3px dashed #2BA3A4;
-                border-radius: 0px 40px 0px 40px;
-                }
-        
-        
-        
-        
-            }
+        .tasks {
+            margin-right: 120px;
+            font-size: 30px;
+            border: 3px dashed #2ba3a4;
+            border-radius: 40px 0px 40px 0px;
+        }
+    }
+
+    .theme {
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .circus {
+            width: 550px;
+        }
+
+        .ideas {
+            margin-right: -150px;
+            margin-left: 50px;
+            font-size: 30px;
+            border: 3px dashed #2ba3a4;
+            border-radius: 0px 40px 0px 40px;
+        }
+    }
 }
