@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    .nav-item {
+        display: inline-block;
+        margin: 1.1em;
+        
+        text-decoration: none;
+        color: rgb(242, 231, 210);
+        background-color: rgba(37, 37, 37, .3);
+        font-size: 2em;
+        transition: all .3s ease-in;
+
+        @media @desktop {
+            &:hover {
+                color: black;
+                text-shadow: 3px 3px 3px rgb(242, 231, 210);
+            }
+        }
+    }
+    //nav-item
+}
+//nav
