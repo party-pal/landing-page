@@ -184,6 +184,7 @@ main section .btn-box img {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 1em 0em;
   width: 90%;
+  height: 100%;
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
@@ -205,16 +206,6 @@ main section .btn-box img {
   border-radius: 15px;
   padding: 1%;
 }
-.about-body .about-container .overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
 .about-body .about-container .team {
   display: flex;
   flex-direction: column;
@@ -226,6 +217,7 @@ main section .btn-box img {
 }
 .about-body .about-container .team .team-member-name {
   text-decoration: underline;
+  padding: 4px;
 }
 .about-body .about-container .team .team-member {
   justify-content: center;
@@ -235,6 +227,11 @@ main section .btn-box img {
   border-radius: 5%;
   padding: 2%;
   margin: 1em 0.5em;
+}
+@media (max-width: 500px) {
+  .about-body .about-container .team .team-member {
+    width: 45%;
+  }
 }
 .about-body .about-container .team .team-member img {
   width: 65%;
@@ -247,7 +244,7 @@ main section .btn-box img {
 }
 .about-body .about-container .go-home {
   font-size: 1.4em;
-  padding: 1.5%;
+  padding: 2%;
   text-shadow: 2px 2px 2px #111;
   color: #f2e7d2;
   background-color: rgba(0, 0, 0, 0.5);
