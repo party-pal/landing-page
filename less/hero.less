@@ -1,9 +1,9 @@
 body {
     font-size: 62.5%;
     text-align: center;
-    width: 1000px;
+    // width: 1000px;
     box-sizing: border-box;
-    margin: auto;
+    // margin: auto;
 
     .logo {
         margin-left: 160px;
@@ -18,31 +18,47 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
+        width: 80vw;
+        margin: 0 auto;
+
+        @media @mobile {
+            height: 100vh;
+            width: 100vw;
+        }
+        @media @tablet {
+            height: 90vh;
+            width: 90vw;
+        }
+        
+       
 
         .hero-text {
             width: 60%;
             // margin-left: 25%;
-            background-color: rgba(37, 37, 37, 0);
+            // background-color: rgba(37, 37, 37, .05);
             font-family: "Montserrat", sans-serif;
+            line-height: 6em;
+            @media @mobile {
+                line-height: 4em;
+            }
+            @media @in-between {
+                line-height: 4em;
+            }
 
             .title {
                 font-size: 6em;
                 color: rgb(242, 231, 210);
-                text-shadow: 3px 3px 3px #333;
-            }
-
-            h1 {
-                font-size: 2em;
-                color: rgb(242, 231, 210);
-                margin-top: -1em;
-                background-color: rgba(37, 37, 37, 0.03);
-                @media @mobile {
-                    background-color: rgba(37, 37, 37, 0.5);
+                text-shadow: 4px 4px 4px #333;
+                @media @tablet {
+                    font-size: 4em;
                 }
             }
+            //title
         }
+        //hero-text
     }
+    //hero
 
     .budget {
         display: flex;
