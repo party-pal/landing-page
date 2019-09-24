@@ -1,0 +1,96 @@
+body {
+    background: url('../img/about-bg.jpg') center no-repeat;
+    background-size: cover;
+
+    .about-container {
+        background-color: rgba(0,0,0,0.25);
+        padding: 1em 0em;
+        width: 90%;
+        margin: 0 auto;
+        @media @desktop {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .title {
+            color:rgb(242, 231, 210);
+            font-family: 'Acme', serif;
+            letter-spacing: 2px;
+            
+            width: 50%;
+            margin: 0 auto;
+            text-shadow: 3px 3px 4px #111;
+            font-size: 4em;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 1%;
+        }
+        .overlay {
+        
+            position: fixed; 
+            
+            width: 100%; 
+            height: 100%; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); 
+            z-index: 0; 
+    }
+    
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4em;
+        .team-member-name {
+            text-decoration: underline;
+        }
+    
+        .team-member {
+            
+            justify-content: center;
+            background-color: white;
+            width: 25%;
+            border: 1px solid black;
+            border-radius: 5%;
+            padding: 2%;
+            margin: 1em 0em;
+            
+    
+            img {
+                
+                width: 65%;
+                border-radius: 40%;
+            }
+        }
+    
+        .developers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+    .go-home {
+        font-size: 1.4em;
+        padding: 1.5%;
+        text-shadow: 2px 2px 2px #111;
+        color:rgb(242, 231, 210);
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 15px;
+        font-family: 'Acme', serif;
+    }
+   
+    }
+    //container
+    
+}
+// body
+
+
+
+
