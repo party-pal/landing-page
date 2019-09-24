@@ -257,9 +257,7 @@ main section .btn-box img {
 body {
   font-size: 62.5%;
   text-align: center;
-  width: 1000px;
   box-sizing: border-box;
-  margin: auto;
 }
 body .logo {
   margin-left: 160px;
@@ -273,27 +271,29 @@ body .hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
 }
 body .hero .hero-text {
   width: 60%;
-  background-color: rgba(37, 37, 37, 0);
+  background-color: rgba(37, 37, 37, 0.05);
   font-family: "Montserrat", sans-serif;
+  line-height: 6em;
+}
+@media (max-width: 500px) {
+  body .hero .hero-text {
+    line-height: 4em;
+  }
 }
 body .hero .hero-text .title {
   font-size: 6em;
   color: #f2e7d2;
   text-shadow: 3px 3px 3px #333;
 }
-body .hero .hero-text h1 {
-  font-size: 2em;
-  color: #f2e7d2;
-  margin-top: -1em;
-  background-color: rgba(37, 37, 37, 0.03);
-}
 @media (max-width: 500px) {
-  body .hero .hero-text h1 {
-    background-color: rgba(37, 37, 37, 0.5);
+  body .hero .hero-text .title {
+    font-size: 4em;
   }
 }
 body .budget {
