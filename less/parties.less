@@ -1,0 +1,68 @@
+.parties-body {
+    font-family: "Montserrat", sans-serif;
+    background: url('../img/parties-bg.jpg') no-repeat center;
+    background-size: cover;
+    
+    .parties-main {
+        padding: 7%;
+        background: none;
+        @media @tablet {
+            padding-top: 14%;
+        }
+        @media @mobile {
+            padding-top: 16%;
+        }
+        .title {
+            padding: 2%;
+            font-size: 4em;
+            color: rgb(242, 231, 210);
+            text-shadow: 4px 4px 4px #333;
+            line-height: 1em;
+            @media @mobile {
+                padding: 4%;
+            }
+        }
+        .party-gallery {
+            padding: 3%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            .party {
+                background-color:  rgb(242, 231, 210);
+                width: 45%;
+                padding: 1%;
+                margin: 1em;
+                border: 1px solid black;
+                @media @mobile {
+                    width: 90%;
+                }
+
+                .party-title {
+                    font-size: 2.5em;
+                    border-bottom: 1px solid black;
+                    padding: .25em;
+                    width: 50%;
+                    margin: 0 auto;
+                    text-align: center;
+                    @media @tablet {
+                        width: 80%;
+                    }
+                }
+                .party-description {
+                    font-size: 1.8em;
+                }
+                
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        //party-gallery
+    }
+    //main
+}
+//body
