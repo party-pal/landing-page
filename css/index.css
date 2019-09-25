@@ -448,3 +448,61 @@ body .owl-prev:hover:before,
 body .owl-next:hover:before {
   color: #011627;
 }
+.parties-body {
+  font-family: "Montserrat", sans-serif;
+  background: url('../img/parties-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+.parties-body .parties-main {
+  padding: 7%;
+  background: none;
+}
+@media (max-width: 500px) {
+  .parties-body .parties-main {
+    padding-top: 16%;
+  }
+}
+.parties-body .parties-main .title {
+  padding: 2%;
+  font-size: 4em;
+  color: #f2e7d2;
+  text-shadow: 4px 4px 4px #333;
+  line-height: 1em;
+}
+@media (max-width: 500px) {
+  .parties-body .parties-main .title {
+    padding: 4%;
+  }
+}
+.parties-body .parties-main .party-gallery {
+  padding: 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parties-body .parties-main .party-gallery .party {
+  width: 45%;
+  margin: 1em;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .parties-body .parties-main .party-gallery .party {
+    width: 90%;
+  }
+}
+.parties-body .parties-main .party-gallery .party .party-title {
+  font-size: 2.5em;
+  border-bottom: 1px solid black;
+  padding: 0.25em;
+  width: 40%;
+  margin: 0 auto;
+}
+.parties-body .parties-main .party-gallery .party .party-description {
+  font-size: 1.3em;
+}
+.parties-body .parties-main .party-gallery .party img {
+  width: 100%;
+}
