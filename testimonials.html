@@ -1,54 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Montserrat|Prompt&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Speech Bubble Testimonial Carousel</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
-
-    <link rel="stylesheet" href="css/index.css">
-    <title>Testimonials</title>
-
-    
 </head>
-<body>
+
+<body class="testbackground">
+
+        <section class="menu">	
+                <nav role="navigation">	
+                        <ul>	
+                <li>	
+                        <a>	
+                            <div>	
+                                Menu	
+                            </div>	
+                        </a><div>	
+                            <ul>	
+                                <li><a href="index.html">Home</a></li>	
+                                <li><a href="about.html">About Us</a></li>	
+                                <li><a href="partyinspirations.html">Party Inspirations</a></li>	
+                                <li><a href="testimonials.html">Testimonials</a></li>		
+                            </ul>	
+                        </div>	
+                    </li>	
+                    </ul>	
+                    </nav>	
+                    </section>	
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="testimonial-slider" class="owl-carousel">
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <p class="description">
-                                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat id in ipsam ipsum laborum libero minus nam. "
-                            </p>
-                        </div>
-                        <div class="pic">
-                            <img src="images/img-1.jpg" alt="">
-                        </div>
-                        <h3 class="testimonial-title">Williamson</h3>
-                        <span class="post">Web Designer</span>
-                    </div>
-     
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <p class="description">
-                                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat id in ipsam ipsum laborum libero minus nam. "
-                            </p>
-                        </div>
-                        <div class="pic">
-                            <img src="images/img-2.jpg" alt="">
-                        </div>
-                        <h3 class="testimonial-title">kristiana</h3>
-                        <span class="post">Web Developer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="reviews">What our Party Planners have to say...</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Planning my sisters Bachelorette party was the worst. A friend of mine recommended that I check out Party Pal. Let me tell you, I was in no way disappointed. I was even able to enjoy the party since my stress level had vanished! Thanks Party Pal!</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/1.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Stacie Jacobs</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Trying to get my husband to help plan our kids 1st birthday is pointless. I was browsing the web trying to figure a way to multi-task by myself. Party Pal saved the day! I cannot thank you enough! Not only was I able to fully plan my party, I also was able to keep track of everything in one place.</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/2.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Allison Anderson</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                            </div>			
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Party Pal gets an A+ from me. Our frat party is now known as the "Party of the Century!"</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/3.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Michael Holz</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">My best friend can be a nightmare (don't tell her I said that...). So when she asked me to be the lead on her baby shower I was excited. Everything went as planned and she now thinks I have magic powers. I won't be correcting her on that. Thanks guys!</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/4.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Julie Reynolds</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                            </div>			
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">If you're as unorganized as I am, then you need to check out this app. I have recommended it to all of my friends.</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/5.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Samantha Higgins</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">I was able to plan a surprise wedding anniversary for my wife. After 50 years you would think I couldn't surprise her. Party Pal (and my daughter) helped plan the perfect anniversary!</div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/6.jpg" alt="">										
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Johnny Lawerence</b></div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>								
+                                </div>
+                            </div>			
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </body>
-    </html>
-    
+    </html>                            
