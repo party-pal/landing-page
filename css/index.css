@@ -369,7 +369,6 @@ body {
   background: ivory;
   font-size: 62.5%;
   text-align: center;
-  width: 100%;
   box-sizing: border-box;
 }
 body .logo {
@@ -395,7 +394,6 @@ body .hero {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  width: 90%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -439,7 +437,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   margin-top: 2em;
   padding: 1%;
-  margin: 0 auto;
 }
 footer .footer-text {
   color: white;
