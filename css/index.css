@@ -132,10 +132,12 @@
 .container main .budget {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2%;
 }
 .container main .budget .decor {
   width: 50%;
+  margin-right: 5%;
 }
 @media (max-width: 800px) {
   .container main .budget .decor {
@@ -149,6 +151,7 @@
   border-radius: 0px 40px 0px 40px;
   background: white;
   font-family: 'Montserrat', sans-serif;
+  margin-left: 5%;
 }
 @media (max-width: 800px) {
   .container main .budget .costs {
@@ -158,10 +161,12 @@
 .container main .organize {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2%;
 }
 .container main .organize .supplies {
   width: 50%;
+  margin-left: 5%;
 }
 @media (max-width: 800px) {
   .container main .organize .supplies {
@@ -175,7 +180,7 @@
   border: 3px dashed #2ba3a4;
   border-radius: 40px 0px 40px 0px;
   width: 95%;
-  margin: 0 auto;
+  margin-right: 5%;
   background: white;
   font-family: 'Montserrat', sans-serif;
 }
@@ -183,9 +188,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2%;
 }
 .container main .theme .circus {
   width: 49%;
+  margin-right: 5%;
 }
 @media (max-width: 800px) {
   .container main .theme .circus {
@@ -197,7 +204,7 @@
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   width: 95%;
-  margin: 0 auto;
+  margin-left: 5%;
   font-size: 2em;
   border: 3px dashed #2ba3a4;
   border-radius: 0px 40px 0px 40px;
