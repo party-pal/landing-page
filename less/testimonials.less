@@ -7,18 +7,22 @@
 .test-container {
     background-color: rgba(0, 0, 0, 0.30);
     height: auto;
-    margin-top: 2%;
+	margin-top: 2%;
+	
 }
 .reviews {
 	color: #000;
-	font-size: 40px;
+	font-size: 6em;
 	font-weight: bold;
 	text-align: center;
 	position: relative;
-    margin: 100px 0 160px;
+    margin: 10% 0%;
     font-family: 'Raleway', sans-serif;
     text-shadow: 3px 3px 4px #111;
-    color: white;
+	color: white;
+	@media @mobile {
+		margin-top: 16%;
+	}
 }
 .reviews::after {
 	content: "";
@@ -39,12 +43,16 @@
 .carousel .item {
 	color: #999;
 	overflow: hidden;
-    min-height: 120px;
+    // min-height: 120px;
 	font-size: 30px;
+	@media @mobile {
+		font-size: 13px;
+		width: 100%;
+	}
 }
 .carousel .media {
 	position: relative;
-	padding: 0 0 0 20px;
+	// padding: 0 0 0 20px;
 }
 .carousel .media img {
 	width: 75px;
@@ -62,8 +70,8 @@
     background: #f1f1f1;
     border: 1px solid #efefef;
     border-radius: 0px 40px 0px 40px;
-        margin-bottom: 15px;
-        font-family: 'Montserrat', sans-serif;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
 
 }
 .carousel .testimonial::after {
