@@ -21,14 +21,20 @@
             font-family: 'Acme', serif;
             letter-spacing: 2px;
             line-height: 1em;
-            
             width: 50%;
             margin: 0 auto;
             text-shadow: 3px 3px 4px #111;
-            font-size: 4em;
+            font-size: 4.4em;
             font-weight: bold;
             border-radius: 15px;
             padding: 1%;
+            @media @tablet {
+                width: 60%;
+                font-size: 6em;
+            }
+            @media @mobile {
+                width: 80%;
+            }
         }
    
     .team {
@@ -39,12 +45,10 @@
         z-index: 5;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.4em;
+       
         
       
-        .team-member-name {
-            text-decoration: underline;
-            padding: 4px;
-        }
+        
     
         .team-member {
             
@@ -55,16 +59,43 @@
             border-radius: 5%;
             padding: 2%;
             margin: 1em .5em;
+           
 
-            @media @mobile {
-                width: 45%;
+            @media @tablet {
+                width: 70%;
             }
-            
             img {
                 width: 65%;
                 border-radius: 40%;
             }
+            .team-member-name {
+                text-decoration: underline;
+                padding: 4px;
+                @media @tablet {
+                    font-size: 3em;
+                }
+                @media @mobile {
+                    font-size: 2em;
+                }  
+            }
+            .team-member-role {
+                @media @tablet {
+                    font-size: 3em;
+                }
+                @media @mobile {
+                    font-size: 2em;
+                }
+            }
+
+            h4 a {
+                @media @mobile {
+                    font-size: .7em;
+                    padding: none;
+                }
+                
+            }
         }
+        //TEAM-MEMBER
     
         .developers {
             display: flex;
