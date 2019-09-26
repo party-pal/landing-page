@@ -15,6 +15,7 @@
 
             @media @tablet {
                 flex-direction: column;
+                justify-content: center;
                 width: 100%;
             }
 
@@ -23,7 +24,8 @@
             }
             img {
                 @media @tablet {
-                    width: 100%;
+                    width: 90%;
+                    margin: 0 auto;
                 }
             }
         }
@@ -53,10 +55,10 @@
                     // padding: 60px;
                     // line-height: 45px;
                     // margin-left: 85px;
-                    font-size: 35px;
+                    font-size: 2.2em;
                     border: 3px dashed #2ba3a4;
                     border-radius: 0px 40px 0px 40px;
-                    width: 100%;
+                    // width: 100%;
                     background: white;
                     font-family: 'Montserrat', sans-serif;
                     @media @tablet {
@@ -76,16 +78,21 @@
         
                 .supplies {
                     width: 50%;
+                    @media @tablet {
+                        width: 95%;
+                        margin: 0 auto;
+                    }
                 }
         
                 .tasks {
                     // line-height: 45px;
                     // margin-right: 85px;
-                    // padding: 60px;
-                    font-size: 35px;
+                    padding: 2%;
+                    font-size: 2.2em;
                     border: 3px dashed #2ba3a4;
                     border-radius: 40px 0px 40px 0px;
-                    width: 100%;
+                    width: 95%;
+                    margin: 0 auto;
                     // height: 24vh;
                     background: white;
                     font-family: 'Montserrat', sans-serif;
@@ -102,6 +109,11 @@
         
                 .circus {
                     width: 49%;
+
+                    @media @tablet {
+                        order: 2;
+                        width: 95%;
+                    }
                 }
         
                 .ideas {
@@ -109,9 +121,9 @@
                     // line-height: 45px;
                     // margin-left: 85px;
                     width: 100%;
-                    // height: 25vh;
-                    // padding: 60px;
-                    font-size: 35px;
+                    width: 95%;
+                    margin: 0 auto;
+                    font-size: 2em;
                     border: 3px dashed #2ba3a4;
                     border-radius: 0px 40px 0px 40px;
                     background: white;
