@@ -1,147 +1,189 @@
-h2, h3, h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-
-}
-
-.budget {
-        display: flex;
-        margin-top: 100px;
-        align-items: center;
-        justify-content: center;
-
-        .decor {
-            width: 70vh;
-        }
-
-        .costs {
-            padding: 60px;
-            line-height: 45px;
-            margin-left: 85px;
-            font-size: 35px;
-            border: 3px dashed #2ba3a4;
-            border-radius: 0px 40px 0px 40px;
-            width: 60vh;
-            height: 30vh;
-            background: white;
-            font-family: 'Montserrat', sans-serif;
-
-        }
-    }
-
-    .organize {
-        display: flex;
-        margin-top: 100px;
-        align-items: center;
-        justify-content: center;
-
-
-        .supplies {
-            width: 70vh;
-        }
-
-        .tasks {
-            line-height: 45px;
-            margin-right: 85px;
-            padding: 60px;
-            font-size: 35px;
-            border: 3px dashed #2ba3a4;
-            border-radius: 40px 0px 40px 0px;
-            width: 60vh;
-            height: 24vh;
-            background: white;
-            font-family: 'Montserrat', sans-serif;
-
-        }
-    }
-
-    .theme {
-        display: flex;
-        margin-top: 100px;
-        align-items: center;
-        justify-content: center;
-
-
-        .circus {
-            width: 70vh;
-        }
-
-        .ideas {
-            font-family: 'Montserrat', sans-serif;
-
-            line-height: 45px;
-            margin-left: 85px;
-            width: 60vh;
-            height: 25vh;
-            padding: 60px;
-            font-size: 35px;
-            border: 3px dashed #2ba3a4;
-            border-radius: 0px 40px 0px 40px;
-            background: white;
-        }
-    }
-
+.container {
     
+    margin: 0 auto;
+    box-sizing: border-box;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+
+            @media @tablet {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            div {
+                padding: 1%;
+            }
+            img {
+                @media @tablet {
+                    width: 100%;
+                }
+            }
+        }
+        h2, h3, h4 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5em;
         
-    .glow-on-hover {
-        font-size: 30px;
-        margin-top: 85px;
-        margin-bottom: 65px;
-        width: 240px;
-        height: 60px;
-        border: none;
-        outline: none;
-        color: #fff;
-        background: #111;
-        cursor: pointer;
-        position: relative;
-        z-index: 0;
-        border-radius: 10px;
+        }
+        
+        .budget {
+                display: flex;
+                // margin-top: 100px;
+                align-items: center;
+                justify-content: center;
+               
+        
+                .decor {
+                    width: 50%;
+                    @media @tablet {
+                        order: 2;
+                        width: 100%;
+                    }
+                  
+                }
+        
+                .costs {
+                    // padding: 60px;
+                    // line-height: 45px;
+                    // margin-left: 85px;
+                    font-size: 35px;
+                    border: 3px dashed #2ba3a4;
+                    border-radius: 0px 40px 0px 40px;
+                    width: 100%;
+                    background: white;
+                    font-family: 'Montserrat', sans-serif;
+                    @media @tablet {
+                        order: 1;
+                    }
+                  
+        
+                }
+            }
+        
+            .organize {
+                display: flex;
+                // margin-top: 100px;
+                align-items: center;
+                justify-content: center;
+        
+        
+                .supplies {
+                    width: 50%;
+                }
+        
+                .tasks {
+                    // line-height: 45px;
+                    // margin-right: 85px;
+                    // padding: 60px;
+                    font-size: 35px;
+                    border: 3px dashed #2ba3a4;
+                    border-radius: 40px 0px 40px 0px;
+                    width: 100%;
+                    // height: 24vh;
+                    background: white;
+                    font-family: 'Montserrat', sans-serif;
+        
+                }
+            }
+        
+            .theme {
+                display: flex;
+                // margin-top: 100px;
+                align-items: center;
+                justify-content: center;
+        
+        
+                .circus {
+                    width: 49%;
+                }
+        
+                .ideas {
+                    font-family: 'Montserrat', sans-serif;
+                    // line-height: 45px;
+                    // margin-left: 85px;
+                    width: 100%;
+                    // height: 25vh;
+                    // padding: 60px;
+                    font-size: 35px;
+                    border: 3px dashed #2ba3a4;
+                    border-radius: 0px 40px 0px 40px;
+                    background: white;
+                }
+            }
+        
+            
+                
+            .glow-on-hover {
+                font-size: 30px;
+                margin-top: 85px;
+                margin-bottom: 65px;
+                width: 240px;
+                height: 60px;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #111;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+            }
+            
+            .glow-on-hover:before {
+                content: '';
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left:-2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                transition: opacity .3s ease-in-out;
+                border-radius: 10px;
+            }
+            
+            .glow-on-hover:active {
+                color: #000
+            }
+            
+            .glow-on-hover:active:after {
+                background: transparent;
+            }
+            
+            .glow-on-hover:hover:before {
+                opacity: 1;
+            }
+            
+            .glow-on-hover:after {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #111;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+            
+            @keyframes glowing {
+                0% { background-position: 0 0; }
+                50% { background-position: 400% 0; }
+                100% { background-position: 0 0; }
+            }
     }
+    //main
     
-    .glow-on-hover:before {
-        content: '';
-        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-        position: absolute;
-        top: -2px;
-        left:-2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing 20s linear infinite;
-        opacity: 0;
-        transition: opacity .3s ease-in-out;
-        border-radius: 10px;
-    }
-    
-    .glow-on-hover:active {
-        color: #000
-    }
-    
-    .glow-on-hover:active:after {
-        background: transparent;
-    }
-    
-    .glow-on-hover:hover:before {
-        opacity: 1;
-    }
-    
-    .glow-on-hover:after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #111;
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-    }
-    
-    @keyframes glowing {
-        0% { background-position: 0 0; }
-        50% { background-position: 400% 0; }
-        100% { background-position: 0 0; }
-    }
+}
+//container
