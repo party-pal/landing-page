@@ -69,10 +69,11 @@
   padding: 0.25rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  width: 40%;
+  width: auto;
 }
 .menu > nav > ul > li a + div > ul > li:hover > a {
   background-color: rgba(0, 0, 0, 0.15);
+  width: auto;
 }
 .menu > nav > ul > li > a {
   align-items: flex-start;
@@ -81,7 +82,7 @@
   font-size: 1.55rem;
   font-weight: 200;
   letter-spacing: 1px;
-  max-width: 130px;
+  width: auto;
   padding: 1rem 1.5rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -505,14 +506,12 @@ footer .footer-text {
   font-family: 'Acme', serif;
 }
 .testbackground {
-  background: url('../img/background-blur-blurred-255379.jpg') center no-repeat;
+  background: url('../img/background-blur-blurred-255379.jpg');
 }
-.test-container {
-  background-color: rgba(0, 0, 0, 0.3);
+.testbackground .container .test-container {
   height: auto;
-  margin-top: 2%;
 }
-.reviews {
+.testbackground .container .reviews {
   color: #000;
   font-size: 6em;
   font-weight: bold;
@@ -524,11 +523,11 @@ footer .footer-text {
   color: white;
 }
 @media (max-width: 500px) {
-  .reviews {
+  .testbackground .container .reviews {
     margin-top: 16%;
   }
 }
-.reviews::after {
+.testbackground .container .reviews::after {
   content: "";
   width: 100px;
   position: absolute;
@@ -540,44 +539,44 @@ footer .footer-text {
   right: 0;
   bottom: -20px;
 }
-.carousel {
+.testbackground .container .carousel {
   margin: 0 auto;
   padding: 0 70px;
 }
-.carousel .item {
+.testbackground .container .carousel .item {
   color: #999;
   overflow: hidden;
   font-size: 30px;
 }
 @media (max-width: 500px) {
-  .carousel .item {
+  .testbackground .container .carousel .item {
     font-size: 13px;
     width: 100%;
   }
 }
-.carousel .media {
+.testbackground .container .carousel .media {
   position: relative;
 }
-.carousel .media img {
+.testbackground .container .carousel .media img {
   width: 75px;
   height: 75px;
   display: block;
   border-radius: 50%;
 }
-.carousel .testimonial-wrapper {
+.testbackground .container .carousel .testimonial-wrapper {
   padding: 0 10px;
 }
-.carousel .testimonial {
-  color: #3a14a1;
+.testbackground .container .carousel .testimonial {
+  color: white;
   position: relative;
   padding: 15px;
-  background: #f1f1f1;
+  background: black;
   border: 1px solid #efefef;
   border-radius: 0px 40px 0px 40px;
   margin-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
 }
-.carousel .testimonial::after {
+.testbackground .container .carousel .testimonial::after {
   content: "";
   width: 15px;
   height: 15px;
@@ -590,38 +589,38 @@ footer .footer-text {
   left: 46px;
   transform: rotateZ(-46deg);
 }
-.carousel .star-rating li {
+.testbackground .container .carousel .star-rating li {
   padding: 0 2px;
 }
-.carousel .star-rating i {
+.testbackground .container .carousel .star-rating i {
   font-size: 16px;
   color: #ffdc12;
 }
-.carousel .overview {
+.testbackground .container .carousel .overview {
   padding: 3px 0 0 15px;
 }
-.carousel .overview .details {
+.testbackground .container .carousel .overview .details {
   padding: 5px 0 8px;
 }
-.carousel .overview b {
+.testbackground .container .carousel .overview b {
   text-transform: uppercase;
   color: #3a14a1;
 }
-.carousel .carousel-indicators {
+.testbackground .container .carousel .carousel-indicators {
   bottom: -70px;
 }
-.carousel-indicators li,
-.carousel-indicators li.active {
+.testbackground .container .carousel-indicators li,
+.testbackground .container .carousel-indicators li.active {
   width: 18px;
   height: 18px;
   border-radius: 50%;
   margin: 1px 2px;
 }
-.carousel-indicators li {
+.testbackground .container .carousel-indicators li {
   background: #e2e2e2;
   border: 4px solid #fff;
 }
-.carousel-indicators li.active {
+.testbackground .container .carousel-indicators li.active {
   color: #fff;
   background-color: #3a14a1;
   border: 5px double;
