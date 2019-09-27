@@ -1,6 +1,6 @@
 .container {
     
-    margin: 0 auto;
+    
     box-sizing: border-box;
     main {
         display: flex;
@@ -21,11 +21,15 @@
 
             div {
                 padding: 1%;
+                margin-top: 1em;
+                margin-bottom: 1em;
             }
             img {
+                width: 60%;
                 @media @tablet {
                     width: 90%;
                     margin: 0 auto;
+                    padding: 2%;
                 }
             }
         }
@@ -45,11 +49,12 @@
                
         
                 .decor {
-                    width: 50%;
+                    width: 40%;
                     margin-right: 5%;
                     @media @tablet {
                         order: 2;
-                        width: 100%;
+                        width: 95%;
+                        margin: 0 auto;
                     }
                   
                 }
@@ -67,6 +72,7 @@
                     margin-left: 5%;
                     @media @tablet {
                         order: 1;
+                        margin: 0 auto;
                     }
                   
         
@@ -82,11 +88,12 @@
         
         
                 .supplies {
-                    width: 50%;
+                    width: 40%;
                     margin-left: 5%;
                     @media @tablet {
                         width: 95%;
                         margin: 0 auto;
+                        
                     }
                 }
         
@@ -102,6 +109,10 @@
                     // height: 24vh;
                     background: white;
                     font-family: 'Montserrat', sans-serif;
+
+                    @media @tablet {
+                        margin: 0 auto;
+                    }
         
                 }
             }
@@ -115,12 +126,13 @@
         
         
                 .circus {
-                    width: 49%;
+                    width: 40%;
                     margin-right: 5%;
 
                     @media @tablet {
                         order: 2;
                         width: 95%;
+                        margin: 0 auto;
                     }
                 }
         
@@ -135,6 +147,10 @@
                     border: 3px dashed #2ba3a4;
                     border-radius: 0px 40px 0px 40px;
                     background: white;
+
+                    @media @tablet {
+                        margin: 0 auto;
+                    }
                 }
             }
         
@@ -154,6 +170,11 @@
                 position: relative;
                 z-index: 0;
                 border-radius: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
             
             .glow-on-hover:before {
