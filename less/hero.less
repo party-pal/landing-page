@@ -1,0 +1,62 @@
+body {
+    background: ivory;
+    font-size: 62.5%;
+    text-align: center;
+    
+    box-sizing: border-box;
+
+    .logo {
+        padding-top: 5%;
+        @media @tablet {
+            padding-top: 10%;
+        }
+        @media @mobile {
+            padding-top: 14%;
+        }
+    }
+
+    .hero {
+        background: url("../img/hero-bg.png") center no-repeat;
+        background-size: cover;
+        border: 1px solid black;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin: 0 auto;
+
+        @media @mobile {
+            height: 100vh;
+            width: 100vw;
+        }
+        @media @tablet {
+            height: 90vh;
+            width: 90vw;
+        }
+        
+       
+
+        .hero-text {
+            width: 60%;
+            font-family: "Montserrat", sans-serif;
+            line-height: 6em;
+            @media @mobile {
+                line-height: 4em;
+            }
+            @media @in-between {
+                line-height: 4em;
+            }
+
+            .title {
+                font-size: 6em;
+                color: rgb(242, 231, 210);
+                text-shadow: 4px 4px 4px #333;
+                @media @tablet {
+                    font-size: 4em;
+                }
+            }
+        }
+    }
+}
