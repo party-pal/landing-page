@@ -1,13 +1,10 @@
-.pineapple {
-  margin-top: 25px;
-}
 .menu {
   background: linear-gradient(to left, rgba(54, 194, 182, 0.96) 0, rgba(62, 188, 207, 0.96) 100%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   display: block;
   position: fixed;
-  width: 10.5vh;
+  width: 20vw;
   z-index: 1000;
 }
 .menu > nav > ul {
@@ -116,11 +113,14 @@
 }
 .container main section div {
   padding: 1%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 @media (max-width: 800px) {
   .container main section img {
     width: 90%;
     margin: 0 auto;
+    padding: 2%;
   }
 }
 .container main h2,
@@ -143,6 +143,7 @@
   .container main .budget .decor {
     order: 2;
     width: 100%;
+    margin: 0 auto;
   }
 }
 .container main .budget .costs {
@@ -156,6 +157,7 @@
 @media (max-width: 800px) {
   .container main .budget .costs {
     order: 1;
+    margin: 0 auto;
   }
 }
 .container main .organize {
@@ -184,6 +186,11 @@
   background: white;
   font-family: 'Montserrat', sans-serif;
 }
+@media (max-width: 800px) {
+  .container main .organize .tasks {
+    margin: 0 auto;
+  }
+}
 .container main .theme {
   display: flex;
   align-items: center;
@@ -198,6 +205,7 @@
   .container main .theme .circus {
     order: 2;
     width: 95%;
+    margin: 0 auto;
   }
 }
 .container main .theme .ideas {
@@ -209,6 +217,11 @@
   border: 3px dashed #2ba3a4;
   border-radius: 0px 40px 0px 40px;
   background: white;
+}
+@media (max-width: 800px) {
+  .container main .theme .ideas {
+    margin: 0 auto;
+  }
 }
 .container main .glow-on-hover {
   font-size: 30px;
@@ -224,6 +237,10 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
+}
+.container main .glow-on-hover a {
+  text-decoration: none;
+  color: white;
 }
 .container main .glow-on-hover:before {
   content: '';
@@ -477,14 +494,19 @@ footer .footer-text {
 }
 .reviews {
   color: #000;
-  font-size: 40px;
+  font-size: 6em;
   font-weight: bold;
   text-align: center;
   position: relative;
-  margin: 100px 0 160px;
+  margin: 10% 0%;
   font-family: 'Raleway', sans-serif;
   text-shadow: 3px 3px 4px #111;
   color: white;
+}
+@media (max-width: 500px) {
+  .reviews {
+    margin-top: 16%;
+  }
 }
 .reviews::after {
   content: "";
@@ -505,12 +527,16 @@ footer .footer-text {
 .carousel .item {
   color: #999;
   overflow: hidden;
-  min-height: 120px;
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  .carousel .item {
+    font-size: 13px;
+    width: 100%;
+  }
 }
 .carousel .media {
   position: relative;
-  padding: 0 0 0 20px;
 }
 .carousel .media img {
   width: 75px;
@@ -596,7 +622,7 @@ footer .footer-text {
 }
 @media (max-width: 500px) {
   .parties-body .parties-main {
-    padding-top: 16%;
+    padding-top: 14%;
   }
 }
 .parties-body .parties-main .title {
