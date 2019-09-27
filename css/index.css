@@ -508,10 +508,10 @@ footer .footer-text {
 .testbackground {
   background: url('../img/background-blur-blurred-255379.jpg');
 }
-.test-container {
+.testbackground .container .test-container {
   height: auto;
 }
-.reviews {
+.testbackground .container .reviews {
   color: #000;
   font-size: 6em;
   font-weight: bold;
@@ -523,11 +523,11 @@ footer .footer-text {
   color: white;
 }
 @media (max-width: 500px) {
-  .reviews {
+  .testbackground .container .reviews {
     margin-top: 16%;
   }
 }
-.reviews::after {
+.testbackground .container .reviews::after {
   content: "";
   width: 100px;
   position: absolute;
@@ -539,34 +539,34 @@ footer .footer-text {
   right: 0;
   bottom: -20px;
 }
-.carousel {
+.testbackground .container .carousel {
   margin: 0 auto;
   padding: 0 70px;
 }
-.carousel .item {
+.testbackground .container .carousel .item {
   color: #999;
   overflow: hidden;
   font-size: 30px;
 }
 @media (max-width: 500px) {
-  .carousel .item {
+  .testbackground .container .carousel .item {
     font-size: 13px;
     width: 100%;
   }
 }
-.carousel .media {
+.testbackground .container .carousel .media {
   position: relative;
 }
-.carousel .media img {
+.testbackground .container .carousel .media img {
   width: 75px;
   height: 75px;
   display: block;
   border-radius: 50%;
 }
-.carousel .testimonial-wrapper {
+.testbackground .container .carousel .testimonial-wrapper {
   padding: 0 10px;
 }
-.carousel .testimonial {
+.testbackground .container .carousel .testimonial {
   color: white;
   position: relative;
   padding: 15px;
@@ -576,7 +576,7 @@ footer .footer-text {
   margin-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
 }
-.carousel .testimonial::after {
+.testbackground .container .carousel .testimonial::after {
   content: "";
   width: 15px;
   height: 15px;
@@ -589,38 +589,38 @@ footer .footer-text {
   left: 46px;
   transform: rotateZ(-46deg);
 }
-.carousel .star-rating li {
+.testbackground .container .carousel .star-rating li {
   padding: 0 2px;
 }
-.carousel .star-rating i {
+.testbackground .container .carousel .star-rating i {
   font-size: 16px;
   color: #ffdc12;
 }
-.carousel .overview {
+.testbackground .container .carousel .overview {
   padding: 3px 0 0 15px;
 }
-.carousel .overview .details {
+.testbackground .container .carousel .overview .details {
   padding: 5px 0 8px;
 }
-.carousel .overview b {
+.testbackground .container .carousel .overview b {
   text-transform: uppercase;
   color: #3a14a1;
 }
-.carousel .carousel-indicators {
+.testbackground .container .carousel .carousel-indicators {
   bottom: -70px;
 }
-.carousel-indicators li,
-.carousel-indicators li.active {
+.testbackground .container .carousel-indicators li,
+.testbackground .container .carousel-indicators li.active {
   width: 18px;
   height: 18px;
   border-radius: 50%;
   margin: 1px 2px;
 }
-.carousel-indicators li {
+.testbackground .container .carousel-indicators li {
   background: #e2e2e2;
   border: 4px solid #fff;
 }
-.carousel-indicators li.active {
+.testbackground .container .carousel-indicators li.active {
   color: #fff;
   background-color: #3a14a1;
   border: 5px double;
