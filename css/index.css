@@ -5,7 +5,13 @@
   display: block;
   position: fixed;
   width: 98%;
+  margin: 0 auto;
   z-index: 1000;
+}
+@media (max-width: 800px) {
+  .menu {
+    width: 93.8%;
+  }
 }
 @media (max-width: 500px) {
   .menu {
@@ -101,7 +107,6 @@
   }
 }
 .container {
-  margin: 0 auto;
   box-sizing: border-box;
 }
 .container main {
