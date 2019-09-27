@@ -116,6 +116,9 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.container main section img {
+  width: 60%;
+}
 @media (max-width: 800px) {
   .container main section img {
     width: 90%;
@@ -136,7 +139,7 @@
   padding: 2%;
 }
 .container main .budget .decor {
-  width: 50%;
+  width: 40%;
   margin-right: 5%;
 }
 @media (max-width: 800px) {
@@ -167,7 +170,7 @@
   padding: 2%;
 }
 .container main .organize .supplies {
-  width: 50%;
+  width: 40%;
   margin-left: 5%;
 }
 @media (max-width: 800px) {
@@ -198,7 +201,7 @@
   padding: 2%;
 }
 .container main .theme .circus {
-  width: 49%;
+  width: 40%;
   margin-right: 5%;
 }
 @media (max-width: 800px) {
