@@ -69,10 +69,11 @@
   padding: 0.25rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  width: 40%;
+  width: auto;
 }
 .menu > nav > ul > li a + div > ul > li:hover > a {
   background-color: rgba(0, 0, 0, 0.15);
+  width: auto;
 }
 .menu > nav > ul > li > a {
   align-items: flex-start;
@@ -81,7 +82,7 @@
   font-size: 1.55rem;
   font-weight: 200;
   letter-spacing: 1px;
-  max-width: 130px;
+  width: auto;
   padding: 1rem 1.5rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -505,12 +506,10 @@ footer .footer-text {
   font-family: 'Acme', serif;
 }
 .testbackground {
-  background: url('../img/background-blur-blurred-255379.jpg') center no-repeat;
+  background: url('../img/background-blur-blurred-255379.jpg');
 }
 .test-container {
-  background-color: rgba(0, 0, 0, 0.3);
   height: auto;
-  margin-top: 2%;
 }
 .reviews {
   color: #000;
@@ -568,10 +567,10 @@ footer .footer-text {
   padding: 0 10px;
 }
 .carousel .testimonial {
-  color: #3a14a1;
+  color: white;
   position: relative;
   padding: 15px;
-  background: #f1f1f1;
+  background: black;
   border: 1px solid #efefef;
   border-radius: 0px 40px 0px 40px;
   margin-bottom: 15px;
